@@ -227,7 +227,7 @@ export default function App() {
   useEffect(() => {
     // Preload pellet image
     const imgX = new Image();
-    imgX.src = 'x.jpg';
+    imgX.src = '/x.jpg';
     imgX.referrerPolicy = 'no-referrer';
     imgX.onload = () => {
       pelletImageRef.current = imgX;
@@ -235,7 +235,7 @@ export default function App() {
 
     // Preload success image
     const imgZ = new Image();
-    imgZ.src = 'z.jpg';
+    imgZ.src = '/z.jpg';
     imgZ.referrerPolicy = 'no-referrer';
     imgZ.onload = () => {
       successImageRef.current = imgZ;
@@ -551,7 +551,7 @@ export default function App() {
                   <>
                     <div className="w-24 h-24 mb-6 overflow-hidden rounded-2xl shadow-md border border-gray-100">
                       <img 
-                        src="czjj.jpg" 
+                        src="/czjj.jpg" 
                         alt="Start Icon" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
@@ -575,7 +575,7 @@ export default function App() {
                   <>
                     <div className="w-32 h-32 mb-6 overflow-hidden rounded-2xl shadow-lg border-4 border-emerald-100">
                       <img 
-                        src="z.jpg" 
+                        src="/z.jpg" 
                         alt="Success" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
